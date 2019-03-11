@@ -1,0 +1,19 @@
+
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+     <p> 
+       <a mat-list-item routerLink="/dashboard" routerLinkActive="active-list-item">Dashboard</a>
+      </p>
+      <p>
+        <a mat-list-item routerLink="/report" routerLinkActive="active-list-item">Reports</a>
+        </p>
+        <p>
+      <a mat-list-item routerLink="/upload" routerLinkActive="active-list-item">Upload</a></p>
+      <p>
+        <a mat-list-item routerLink="/event" routerLinkActive="active-list-item">Events</a>
+      </p>
+    </mat-drawer>
+  <app-header></app-header>
+  <div class="example-sidenav-content">
+    <img src="../assets/images/collapse-menu.png" alt="Menu" (click)="drawer.toggle()" title="Toggle side Menu"/>
+  </div>
+
